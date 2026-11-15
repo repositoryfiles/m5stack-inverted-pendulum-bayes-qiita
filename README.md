@@ -89,7 +89,7 @@ py analysis/summarize_data.py
 1. PCにPython 3を用意し、`py -m pip install -r requirements.txt` を実行します（ThonnyのLocal Python 3でも可）。
 2. Core2にUIFlow2対応MicroPythonを導入し、`M5`、`unit.Roller485Unit` が使用できることを確認します。
 3. PCとCore2を同じWi-Fiに接続します。PC側ファイアウォールで必要に応じてTCP 8000を許可します。
-4. Core2側のファイルで `WIFI_SSID`、`WIFI_PASSWORD`、`SERVER`（例：`http://192.168.x.x:8000`）を各自の環境に変更します。**パスワードをGitHubに登録しないでください。**
+4. Core2側のファイルで `WIFI_SSID`、`WIFI_PASSWORD`、`SERVER`（例：`http://192.168.x.x:8000`）を各自の環境に変更します。
 5. ジグの位置、モーター回転方向、I2Cアドレス、緊急停止を事前確認します。
 
 ### 30回の新規探索
@@ -126,7 +126,7 @@ py pc/pc_fixed_5sec_server.py --mode optimized
 - 自動起立にはジグが必要です。寝かせた状態から完全自律で立ち上がる方式ではありません。
 - 電流制限やソフトウェア停止判定は安全を保証しません。人や物から離れた場所で試してください。
 - 初期傾斜、床面、タイヤ、重心、電源状態などで結果は変わります。得られたゲインは本装置固有の値です。
-- Wi-Fi/PC通信は試行間に行います。姿勢制御自体はCore2上で実行します。
+- Wi-Fi/PC通信は試行時に行います。姿勢制御自体はCore2上で実行します。
 
 ## 関連記事
 
@@ -135,4 +135,4 @@ py pc/pc_fixed_5sec_server.py --mode optimized
 
 ## ライセンス
 
-公開前にコード・画像・実測データのライセンスを決めてください。現時点ではライセンスを指定していません（`LICENSE_NOTE.md`）。
+コードはMIT、画像と実測データはフリーです。
