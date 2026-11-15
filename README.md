@@ -131,7 +131,8 @@ py pc/pc_fixed_5sec_server.py --mode optimized
 ## 関連記事
 
 - [前回のQiita記事（ベイズ最適化）](https://qiita.com/_Moony/items/195174b3dbed6efbd731)
-- 今回のQiita記事：公開後にURLを追加してください。
+- [今回のQiita記事](https://qiita.com/_Moony/items/643a4dd337a24e959e9e)
+ 
 
 ## ライセンス
 
